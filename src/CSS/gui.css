@@ -1,0 +1,125 @@
+.GUI {
+    background-color:aliceblue;
+    height: 500px;
+    width: 650px;
+    margin: 0 auto;
+    border: 1px solid;
+}
+
+.GUI .buttons{
+    width: 50%;
+    margin-top: 50px;
+    margin-left: 3%;
+}
+
+.GUI .registerDisplay{
+    background-color:white;
+    float:right;
+    width:45%;
+    height:200px;
+    margin-top: -120px;
+    margin-right: 3%;
+    border:solid black 1px;
+    overflow:scroll;
+}
+
+.GUI .memoryDisplay{
+    background-color:white;
+    float: left;
+    width: 94%;
+    height: 250px;
+    margin-left: 3%;
+    margin-top: 10px;
+    border: solid black 1px;
+    overflow: scroll;
+}
+
+/* Dropzone styling */
+.dropzone {
+    margin: 8px auto;
+    width: 400px;
+    height: 5%;
+    border: 2px dashed #ccc;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    color: #ccc;
+    line-height: 50px;
+    text-align: center;
+}
+
+.dropzone.dragover {
+    border-color: crimson;
+}
+
+#memoryButton{
+    position:relative;
+    height: 25px;
+    width: 200px;
+    text-align:-webkit-center;
+    line-height: 5px;
+}
+
+.GUI .IO{
+    background-color:white;
+    top:240px;
+    left:5px;
+    width:43%;
+    margin-left: 3%;
+    margin-top: 2%;
+    height:39px;
+    border:solid black 1px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    margin-right:0px;
+    right:2px;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0px;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
