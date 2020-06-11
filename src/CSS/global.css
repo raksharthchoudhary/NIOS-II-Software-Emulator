@@ -1,0 +1,12 @@
+body {
+    background-image: url('../Images/hardware.jpg');
+    font-family: "Arial", sans-serif;
+}
+
+#title {
+    color:white;
+    text-align:center;
+    font-size:48px;
+    position:center;
+    border-bottom: thin solid;
+}
