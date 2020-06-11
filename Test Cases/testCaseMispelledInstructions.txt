@@ -1,0 +1,19 @@
+.text
+        .global _start
+_start:
+        movi         r2, 10
+        movie        r3, 0
+        movi         r4, 1
+dowhile:
+        movi         r5, 1
+forloop:
+        add         r3, r3, r5
+        addi        r5, r5, 1
+        ble         r5, r4, forloop
+        addi        r4, r4, 1
+        ble         r3, r2, dowhile
+        subi        r4, r4, 1
+end:
+        br end
+        .data
+        .end

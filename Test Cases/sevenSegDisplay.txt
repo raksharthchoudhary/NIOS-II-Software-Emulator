@@ -1,0 +1,13 @@
+.text
+        .global _start
+_start:
+
+#mem[0xFFFF] = 0;  slider swtiches
+#mem[0xFFFE] = 0   seven segment display
+        movia        r15, 0xFFFE
+        addi         r4,r0,0x065B777C 
+        stw          r4, 0(r15)
+end:
+        br end
+        .data
+        .end

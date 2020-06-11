@@ -1,0 +1,17 @@
+.text
+	.global _start
+_start:
+	movi 	r2, 2
+	movi 	r3, 5
+	movi 	r4, 10
+	movi	r5, 100
+forloop:
+	add 	r2, r2, r2
+	add 	r3, r3, r3
+    addi 	r4, r4, 10
+	ble 	r2, r5, forloop
+end:
+	br end
+	.data
+	.end
+

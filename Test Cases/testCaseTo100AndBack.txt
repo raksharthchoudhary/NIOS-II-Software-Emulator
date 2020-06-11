@@ -1,0 +1,16 @@
+.text
+	.global _start
+_start:
+	movi 	r2, 2
+	movi    r5, 100
+forloop:
+	addi 	r2, r2, 2
+	bne 	r2, r5, forloop
+doloop:
+    subi    r2, r2, 2
+    bne     r2, r0, doloop
+end:
+	br end
+	.data
+	.end
+
